@@ -1,0 +1,121 @@
+
+/* Contenedor principal del jupiter */
+
+.jupiter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+
+.jupiter-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 175px;
+}
+
+.jupiter-text {
+  margin-left: 8.5vw;
+  flex: 1.25;
+}
+
+.jupiter-text h1 {
+  font-size: 65px;
+  color: #be8345;
+}
+
+.jupiter-text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.jupiter-image {
+  margin-left: 5vw;
+  flex: 1;
+}
+
+.jupiter-image img {
+  width: 100%;
+  max-width: 525px;
+  border-radius: 8px;
+}
+
+/* Contenedor de la galería de imágenes */
+
+.jupiter-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.image-container:last-child {
+  margin-right: 0;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-container p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #848484;
+  text-align: center;
+}
+
+/* Estilos para cuando se pasa el mouse sobre las imágenes */
+
+.image-container:hover .modal-image {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.image-container:hover h2 {
+  color: #ff6f00;
+}
+
+.image-container:hover p {
+  color: #aaa;
+}
+
+/* Estilos para pantallas más pequeñas, hasta 768px */
+
+@media (max-width: 768px) {
+  .jupiter-gallery {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .jupiter-gallery .image-container {
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  .jupiter-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}

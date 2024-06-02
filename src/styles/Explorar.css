@@ -1,0 +1,150 @@
+
+/* Estilos para el contenedor principal */
+
+.explorar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sistema-solar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.planeta h2 {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Estilos de los planetas */
+
+.planeta {
+  position: relative;
+  margin-right: 100px;
+  transition: transform 0.6s ease-in-out;
+  margin-bottom: 100px;
+}
+
+.planeta:hover {
+  transform: scale(1.25);
+}
+
+.satelite-natural h2 {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.satelite-natural {
+  position: relative;
+  margin-right: 30px;
+  transition: transform 0.6s ease-in-out;
+  margin-bottom: 100px;
+}
+
+.satelite-natural:hover {
+  transform: scale(1.25);
+}
+
+.sol {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #ffdb55;
+}
+
+.mercurio {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b5b5b5;
+}
+
+.venus {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d09756;
+}
+
+.luna {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: #c3c3c3;;
+}
+
+.luna h2 {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.tierra {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4aa9d7;
+}
+
+.marte {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #b14745;
+}
+
+.jupiter {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #c36f1b;
+}
+
+.saturno {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e3bb77;
+}
+
+.urano {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #699db2;
+}
+
+.neptuno {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #2f4e9d;
+}
+
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 767px) {
+  .planeta {
+    top: 75px;
+    margin-bottom: 60px;
+  }
+}

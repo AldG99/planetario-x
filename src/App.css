@@ -1,38 +1,156 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Establece el margen y el relleno a cero para todos los elementos */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+/* header.css */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.710);
+  padding: 20px 40px;
+  color: #fff;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 65px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c5c5c5;
+}
+
+main {
+  padding-top: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #000000b8;
+    padding: 20px;
+  }
+
+  .lista-planetario {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  li a {
+    font-size: 0.85em;
+  }  
+
+  .lista-planetario li a {
+    font-size: 0.85em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para el footer */
+
+.footer-links {
+  background-color: rgb(0, 0, 0);
+  padding: 30px 0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.footer-copyright {
+  background-color: #2d80b7;
+  color: #fff;
+  padding: 15px 0;
+  user-select: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.copyright {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 15px 0;
+  user-select: none;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Estilos adicionales */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  margin-top: 50px;
 }

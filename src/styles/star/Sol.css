@@ -1,0 +1,139 @@
+
+/* Contenedor principal del sol */
+
+.sol-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+
+.sol-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 175px;
+}
+
+.sol-text {
+  margin-left: 8.5vw;
+  flex: 1.25;
+}
+
+.sol-text h1 {
+  font-size: 65px;
+  color: #ff9c1b;
+}
+
+.sol-text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sol-image {
+  margin-left: 5vw;
+  flex: 1;
+}
+
+.sol-image img {
+  width: 100%;
+  max-width: 525px;
+  border-radius: 8px;
+}
+
+/* Contenedor de la galería de imágenes */
+
+.sol-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.image-container:last-child {
+  margin-right: 0;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-container p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #848484;
+  text-align: center;
+}
+
+/* Estilos para cuando se pasa el mouse sobre las imágenes */
+
+.image-container:hover .modal-image {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.image-container:hover h2 {
+  color: #ff6f00;
+}
+
+.image-container:hover p {
+  color: #aaa;
+}
+
+/* Contenedor de datos */
+
+.datos-container {
+  margin-top: 175px;
+}
+
+.datos-container h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.datos-container p {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para pantallas más pequeñas, hasta 768px */
+
+@media (max-width: 768px) {
+  .sol-gallery {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .sol-gallery .image-container {
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  .sol-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}

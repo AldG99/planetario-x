@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Contenedor principal */
+
+.inicio-container {
+  position: relative;
+
+}
+
+.background-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenido del inicio */
+
+.inicio-content {
+  margin-top: 34%;
+  margin-bottom: 6.5%;
+  text-align: left;
+  padding: 0 10vw;
+}
+
+.inicio-content h1 {
+  font-size: 4.5vw;
+  text-align: left;
+  color: white;
+}
+
+.inicio-content p {
+  font-size: 1.25vw;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+}
+
+/* Título de contenido */
+
+.content h2 {
+  font-size: 4.5vw;
+}
+
+.content p {
+  font-size: 1.25vw;
+  margin-bottom: 10px;
+}
+
+.content li {
+  margin-top: 10px;
+  margin-left: 3vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2vw;
+}
+
+/* Secciones de contenido */
+
+.content section {
+  padding: 10vw 0;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+  text-align: left;
+  color: white;
+  margin: 5vw 0;
+  padding: 1.65vw 10vw;
+}
+
+.content section.active {
+  opacity: 1;
+}
+
+/* Media query para estilos específicos en pantallas más pequeñas */
+
+@media screen and (max-width: 768px) {
+  .inicio-content h1 {
+    font-size: 7vw;
+  }
+
+  .inicio-content p {
+    font-size: 3vw;
+  }
+
+  .inicio-content {
+    padding: 20vw 0;
+    margin: 30vw 0;
+    padding: 25vw 10vw;
+  }
+
+  .content h2 {
+    font-size: 7vw;
+  }
+
+  .content p {
+    font-size: 3vw;
+  }
+
+  .content li {
+    margin-left: 5vw;
+    font-size: 2.5vw;
+  }
+
+  .content section {
+    padding: 20vw 0;
+    margin: 30vw 0;
+    padding: 25vw 10vw;
+  }
+}
